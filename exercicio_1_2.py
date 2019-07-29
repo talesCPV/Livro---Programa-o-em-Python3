@@ -24,7 +24,7 @@ if len(lista) > 0:
 		if 
 		i += 1
 
-	print('números: ',lista)
+	print('números:',lista)
 
 
 
