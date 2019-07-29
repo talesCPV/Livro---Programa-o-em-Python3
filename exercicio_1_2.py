@@ -8,23 +8,27 @@ while True:
 		lista.append(dg)
 	except:
 		if val == '':
-			print('fim')
+			if len(lista) > 0:
+				i = 0
+				soma = 0
+				minimo = lista[0]
+				maximo = 0
+				while i < len(lista):
+					soma += lista[i]
+					if lista[i] <= minimo:
+						minimo = lista[i]
+					elif lista[i] >= maximo:
+						maximo = lista[i]
+
+					i += 1
+
+				print('números:',lista)
+				print('qtd:',len(lista),'soma:',soma,'min:',minimo,' max:',maximo,' média:',soma/len(lista))
+
 			break
 		else:
 			print('Valor digitado não corresponde a um número inteiro.')
 
-
-if len(lista) > 0:
-	i = 0
-	soma = 0
-	minimo = lista[0]
-	maximo = 0
-	while i < len(lista):
-		soma += lista[i]
-		if 
-		i += 1
-
-	print('números:',lista)
 
 
 
