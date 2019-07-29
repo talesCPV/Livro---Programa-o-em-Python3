@@ -29,7 +29,7 @@ try:
 		row += 1
 
 except IndexError:
-	print('Parâmetros incorretos!')
+	print('Parâmetros incorretos!...')
 	
 
 
