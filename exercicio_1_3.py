@@ -8,15 +8,17 @@ sujeito_m = ['gato','cachorro','homem','bode','galo','sapo','menino','computador
 sujeito_f = ['gata','cadela','mulher','cabra','galinha','cobra','menina','cadeira']
 verbo     = ['atropelou','comeu','deixou','passou','programou','arrumou','comprou']
 
+print()
 i = 0
 while i < 6:
+	frase = '     '
 	genero = random.randint(0,1)
 
 	if genero:
-		frase  = random.choice(artigos_f) + ' ' 
+		frase += random.choice(artigos_f) + ' ' 
 		frase += random.choice(sujeito_f) + ' '
 	else:
-		frase  = random.choice(artigos_m) + ' ' 
+		frase += random.choice(artigos_m) + ' ' 
 		frase += random.choice(sujeito_m) + ' '
 
 	frase += random.choice(verbo) + ' '
@@ -26,8 +28,10 @@ while i < 6:
 		frase += random.choice(artigos_f) + ' ' 
 		frase += random.choice(sujeito_f) + ' '
 	else:
-		frase  = random.choice(artigos_m) + ' ' 
+		frase += random.choice(artigos_m) + ' ' 
 		frase += random.choice(sujeito_m) + ' '
 
 	print(frase)
 	i += 1
+
+print()
