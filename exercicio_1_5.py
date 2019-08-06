@@ -16,9 +16,6 @@ def ordenar(old_list):
 
 	return new_list
 
-
-
-
 lista = []
 while True:
 	try:
@@ -55,11 +52,3 @@ while True:
 			break
 		else:
 			print('Valor digitado não corresponde a um número inteiro.')
-
-
-
-
-
-
-
-
